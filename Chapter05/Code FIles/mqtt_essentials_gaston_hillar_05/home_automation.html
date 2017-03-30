@@ -1,0 +1,62 @@
+<!-- 
+Book: MQTT Essentials
+Chapter 5: Control home automation in JavaScript
+Author: Gaston C. Hillar - Twitter.com/gastonhillar
+Publisher: Packt Publishing Ltd. - http://www.packtpub.com
+-->
+<html>
+  <head>
+    <script src="paho.javascript-1.0.2/mqttws31.js"></script>
+    <script src="jscolor-2.0.4/jscolor.js"></script>
+    <script src="home_automation.js"></script>
+    <title>MQTT over WebSockets Sample</title>
+  </head>
+  
+  <body>  
+    <div id="status">Not connected with MQTT Server</div>
+    <div id="led-1">
+        <span>
+        Select color for LED #1
+        </span>
+        <input class="jscolor" onchange="APP.HomeAutomation.Manager.updateLed(1, this.jscolor)" value="FFFFFF">
+        <svg height="100" width="100">
+          <circle id="status-circle-led-1" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#FFFFFF" />
+        </svg>
+        <div id="status-message-led-1">
+        </div>
+    </div>
+
+    <div id="led-2">
+        <span>
+        Select color for LED #2
+        </span>
+        <input class="jscolor" onchange="APP.HomeAutomation.Manager.updateLed(2, this.jscolor)" value="FFFFFF">
+        <svg height="100" width="100">
+          <circle id="status-circle-led-2" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#FFFFFF" />
+        </svg>
+        <div id="status-message-led-2">
+        </div>
+    </div>
+
+    <div id="led-3">
+        <span>
+        Select color for LED #3
+        </span>
+        <input class="jscolor" onchange="APP.HomeAutomation.Manager.updateLed(3, this.jscolor)" value="FFFFFF">
+        <svg height="100" width="100">
+          <circle id="status-circle-led-3" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="#FFFFFF" />
+        </svg>
+        <div id="status-message-led-3">
+        </div>
+    </div>
+
+  </body>
+</html>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    APP.HomeAutomation.Manager.connect();
+});
+
+</script>
