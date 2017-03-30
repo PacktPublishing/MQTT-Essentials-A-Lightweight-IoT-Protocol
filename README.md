@@ -5,7 +5,7 @@ This step-by-step guide will help you gain a deep understanding of the lightweig
 ## Instructions and Navigation
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
 
-The chapter 1 and 2 doesnot contain code.
+The chapter 1 and 2 does not contain code.
 
 The code will look like the following:
 ```
