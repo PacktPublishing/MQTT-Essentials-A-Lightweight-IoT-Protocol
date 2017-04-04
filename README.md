@@ -1,5 +1,5 @@
-# MQTT Essentials
-This is the code repository for [MQTT Essentials](https://www.packtpub.com/application-development/mqtt-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781787287815), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
+# MQTT Essentials - A Lightweight IoT Protocol
+This is the code repository for [MQTT Essentials - A Lightweight IoT Protocol](https://www.packtpub.com/application-development/mqtt-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781787287815), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
 This step-by-step guide will help you gain a deep understanding of the lightweight MQTT protocol. We’ll begin with the specific vocabulary of MQTT and its working modes, followed by installing a Mosquitto MQTT broker. Then, you will use best practices to secure the MQTT Mosquitto broker to ensure that only authorized clients are able to publish and receive messages. Once you have secured the broker with the appropriate configuration, you will develop a solution that controls a drone with Python.
 ## Instructions and Navigation
